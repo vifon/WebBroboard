@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=WebBroboard
+Exec=webbroboard %u
+Type=Application
+Terminal=false
+MimeType=x-scheme-handler/http;x-scheme-handler/https;
