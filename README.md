@@ -32,6 +32,7 @@ it as your default web browser:
 ```bash
 xdg-mime default webbroboard.desktop x-scheme-handler/https
 xdg-mime default webbroboard.desktop x-scheme-handler/http
+xdg-mime default webbroboard.desktop text/html
 ```
 
 Dependencies:
