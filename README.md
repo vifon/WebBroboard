@@ -35,6 +35,11 @@ xdg-mime default webbroboard.desktop x-scheme-handler/http
 xdg-mime default webbroboard.desktop text/html
 ```
 
+If you run into issue that incorrect browser is selected (despite
+setting it correctly for xdg-open) check if your PATH contains
+webbroboard when you start X server (for example .zshenv is not
+sourced in .zlogin if you are using zsh).
+
 Dependencies:
 
 - xsel(1)
