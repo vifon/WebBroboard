@@ -18,7 +18,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
-xsel --input --primary <<< "$@"
-xsel --input --clipboard <<< "$@"
+echo -n "$@" | xsel --input --primary
+echo -n "$@" | xsel --input --clipboard 
 
 notify-send WebBroboard "$*"
