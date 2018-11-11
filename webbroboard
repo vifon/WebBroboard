@@ -19,6 +19,6 @@
 
 
 echo -n "$@" | xsel --input --primary
-echo -n "$@" | xsel --input --clipboard 
+echo -n "$@" | xsel --input --clipboard
 
 notify-send WebBroboard "$*"
