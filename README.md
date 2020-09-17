@@ -6,14 +6,13 @@
 
 ### The problem
 
-I tend to use many browsers or browser settings for different links. I
-prefer to launch some links in the private mode, some in the regular
-mode, some in a different browser profile (they are pretty handy in
-Chromium, try them out!). Until now I used to right-click and copy to
-clipboard most links in the external applications (like Thunderbird)
-to open them manually in whichever way I prefer. It was tedious and
-didn't help when the application launched some site by itself
-(example: pressing F1 in Thunderbird).
+I tend to use many browsers or browser settings for different
+links. I prefer to launch some links in the private mode, some in the
+regular mode, some in a different browser profile. Until now I used to
+right-click and copy to clipboard most links in the external
+applications (like Thunderbird) to open them manually in whichever way
+I prefer. It was tedious and didn't help when the application launched
+some site by itself (example: pressing F1 in Thunderbird).
 
 ### The solution
 
