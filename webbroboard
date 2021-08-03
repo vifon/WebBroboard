@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
 
 # WebBroboard --- Clipboard as a WebBrowser
 
@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+set -e
 
 echo -n "$@" | xsel --input --primary
 echo -n "$@" | xsel --input --clipboard
