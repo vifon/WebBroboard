@@ -2,7 +2,7 @@
 
 # WebBroboard --- Clipboard as a WebBrowser
 
-# Copyright (C) 2017 Wojciech Siewierski
+# Copyright (C) 2017, 2024 Wojciech Siewierski
 
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -19,7 +19,11 @@
 
 set -e
 
-echo -n "$@" | xsel --input --primary
-echo -n "$@" | xsel --input --clipboard
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    echo -n "$@" | wl-copy
+else
+    echo -n "$@" | xsel --input --primary
+    echo -n "$@" | xsel --input --clipboard
+fi
 
 notify-send WebBroboard "$*"
