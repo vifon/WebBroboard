@@ -26,4 +26,4 @@ else
     echo -n "$@" | xsel --input --clipboard
 fi
 
-notify-send WebBroboard "$*"
+notify-send --app-name WebBroboard WebBroboard "$*"
