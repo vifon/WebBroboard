@@ -20,6 +20,7 @@
 set -e
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    echo -n "$@" | wl-copy --primary
     echo -n "$@" | wl-copy
 else
     echo -n "$@" | xsel --input --primary
